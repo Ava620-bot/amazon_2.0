@@ -11,7 +11,7 @@ const Orders = require('./Order');
 
 dotenv.config({path:'./config.env'});
 
-const port = 3001;
+const port = process.env.PORT || 3001;
 
 //Middleware
 app.use(express.json());
